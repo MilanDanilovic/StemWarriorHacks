@@ -441,3 +441,7 @@ textarea.input2 + .focus-input2::after {
 .width-logo {
     width: 100px
 }
+
+#main-nav{
+  position: sticky top;
+}
