@@ -18,26 +18,34 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand bg-dark navigation-clean sticky-top" id="minimized">
+
+    <nav class="navbar navbar-light navbar-expand bg-transparent navigation-clean sticky-top" id="main-nav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="assets/img/LOGO-LYFE-Font.png" class="width-logo"></img>
+            </a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"></button>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-light navbar-expand bg-light navigation-clean sticky-top" id="minimized">
         <div class="container">
             <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"></button>
             <div class="collapse navbar-collapse" id="navcol-1">
-                <a class="btn hover-button-change w-25" role="button" href="#" id="back-to-overlay"><i
+                <a class="btn hover-button-change w-25 border border-rounded border-3" role="button" href="#" id="back-to-overlay"><i
                         class="fas fa-angle-double-left"></i></a>
             </div>
         </div>
     </nav>
 
-    <header class="text-center text-white masthead" id="app-overlay">
+    <header class="text-center text-dark" id="app-overlay">
         <div class="overlay"></div>
-        <div class="container">
+        <div class="container mt-5">
             <div class="col-xl-9 mx-auto position-relative ">
                 <h1 class="mb-5">Which data can we fetch for you?</h1>
                 <h1 class="mb-5 change"></h1>
             </div>
             <div class="card-group text-dark">
                 <div class="card m-1 hover-card-fire-change zoom">
-                    <a href="#fire" class="text-decoration-none text-dark" id="fire-show">
+                    <a href="#" class="text-decoration-none text-dark" id="fire-show">
                         <img src="assets/img/card-1-bg.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Fire</h5>
@@ -47,7 +55,7 @@
                     </a>
                 </div>
                 <div class="card m-1 hover-card-air-change zoom">
-                    <a href="#air" class="text-decoration-none text-dark" id="air-show">
+                    <a href="#" class="text-decoration-none text-dark" id="air-show">
                         <img src="assets/img/card-2-bg.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Air</h5>
@@ -57,7 +65,7 @@
                     </a>
                 </div>
                 <div class="card m-1 hover-card-water-change zoom">
-                    <a href="#water" class="text-decoration-none text-dark" id="water-show">
+                    <a href="#" class="text-decoration-none text-dark" id="water-show">
                         <img src="assets/img/card-3-bg.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Water</h5>
@@ -78,6 +86,9 @@
             <div class="d-flex flex-column align-items-center mt-5" id="content-wrapper">
                 <div id="content">
                     <div class="container-fluid">
+                        <div class="mb-2">
+                            <h1>Amber Fires</h1>
+                        </div>
                         <div class="row">
                             <div class="col-md-6 col-xl-3 mb-4">
                                 <div class="card shadow border-start-primary py-2">
