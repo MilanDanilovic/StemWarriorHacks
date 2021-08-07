@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" href="assets/css/shared-styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"rel="stylesheet'>
 </head>
 
 <body>
@@ -27,30 +31,97 @@
             </div>
         </div>
     </nav>
-    <header class="text-center text-white masthead vh-100 d-flex align-items-end" style="background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('assets/img/bg1.jpg')no-repeat center center;background-size:cover;">
+    <!-- ##################### -->
+    <header class="text-center text-white  vh-100 d-flex align-items-centar">
         <div class="overlay"></div>
         <div class="container">
-            <div class="row">
-                <div class="col-xl-9 mx-auto position-relative ">
-                    <h1 class="mb-5">Stay Connected To Your Enviroment - Where Lyfe Begins</h1>
-                </div>
-                <div class="col-md-10 col-lg-8 col-xl-7 mx-auto position-relative">
-                    <form>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="svg-wrapper">
-                                    <a href="app.html" class="text-decoration-none"><svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
-                                        <rect class="shape" height="60" width="320"/>
-                                        <div class="text">START <i class="fas fa-angle-double-right"></i></div>
-                                    </svg></a>
-                                </div>
+            <!-- #####  app -->
+            <div class="app">
+                <div class="cardList">
+                    <button class="cardList__btn btn btn--left">
+                        <div class="icon">
+                            <svg>
+                                <use xlink:href="#arrow-left"></use>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="cards__wrapper">
+                        <div class="card current--card">
+                            <div class="card__image">
+                                <img src="1.jpeg" alt="" />
                             </div>
                         </div>
-                    </form>
+                        <div class="card next--card">
+                            <div class="card__image">
+                                <img src="2.jpeg" alt="" />
+                            </div>
+                        </div>
+                        <div class="card previous--card">
+                            <div class="card__image">
+                                <img src="3.jpeg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <button class="cardList__btn btn btn--right">
+                        <div class="icon">
+                            <svg>
+                                <use xlink:href="#arrow-right"></use>
+                            </svg>
+                        </div>
+                    </button>
                 </div>
+                <!---- and more ----->
+                <div class="infoList">
+                    <div class="info__wrapper">
+                        <div class="info current--info">
+                            <h1 class="text name">Highlands</h1>
+                            <h4 class="text location">Scotland</h4>
+                            <p class="text description">The mountains are calling</p>
+                        </div>
+                        <div class="info next--info">
+                            <h1 class="text name">Machu Pichu</h1>
+                            <h4 class="text location">Peru</h4>
+                            <p class="text description">Adventure is never far away</p>
+                        </div>
+                        <div class="info previous--info">
+                            <h1 class="text name">Chamonix</h1>
+                            <h4 class="text location">France</h4>
+                            <p class="text description">Let your dreams come true</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="app__bg">
+                    <div class="app__bg__image current--image">
+                        <img src="1.jpeg" alt="" />
+                    </div>
+                    <div class="app__bg__image next--image">
+                        <img src="2.jpeg" alt="" />
+                    </div>
+                    <div class="app__bg__image previous--image">
+                        <img src="3.jpeg" alt="" />
+                    </div>
+                </div>
+                <div class="loading__wrapper">
+                    <div class="loader--text">Loading...</div>
+                    <div class="loader">
+                        <span></span>
+                    </div>
+                </div>
+                <svg class="icons" style="display: none;">
+                    <symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+                        <polyline points='328 112 184 256 328 400'
+                                     style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+                    </symbol>
+                    <symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+                        <polyline points='184 112 328 256 184 400'
+                                     style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+                    </symbol>
+                </svg>
             </div>
+            <!-- ##### kraj app-->
         </div>
     </header>
+    <!-- ############################ -->
     <section class="text-center bg-light features-icons">
         <div class="container">
             <div class="row">
@@ -99,7 +170,24 @@
                 </div>
             </div>
         </div>
+    </section>      
+    <section class="Subscribe">
+        <div class="overlay"></div>
+        
+            <div class="container">
+                <div class="row">
+                  <div class="col" style="background-color: blue;"  data-bss-hover-animate="pulse">
+                    <h2>Donate</h2>
+                  </div>
+                  <div class="col" style="background-color: rgb(0,151,65);"  data-bss-hover-animate="pulse">
+                    <h2>Be part of our team </h2>
+                
+                  </div>
+                  <div class="wpo-counter-area undefined"><div class="container"><div class="row"><div class="col-lg-12"><div class="wpo-counter-grids"><div class="grid"><div><h2><span class="odometer" data-count="6200">6200</span>+</h2></div><p>Donation</p></div><div class="grid"><div><h2><span class="odometer" data-count="80">80</span>+</h2></div><p>Fund Raised</p></div><div class="grid"><div><h2><span class="odometer" data-count="245">245</span>+</h2></div><p>Volunteers</p></div><div class="grid"><div><h2><span class="odometer" data-count="605">605</span>+</h2></div><p>Projects</p></div></div></div></div></div></div>
+                </div>
+            </div>
     </section>
+
     <footer class="bg-light footer">
         <div class="container">
             <div class="row">
@@ -204,6 +292,10 @@
 
         firebase.analytics();
     </script>
+
+<script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js'></script>
+<script  src="script_head.js.js"></script>
 
 </body>
 
