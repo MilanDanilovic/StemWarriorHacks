@@ -38,6 +38,6 @@ $("#back-to-overlay").click(function(e) {
     $("#fire").fadeOut();
     $("#air").fadeOut();
     $("#water").fadeOut();
-    $("#app-overlay").fadeIn();
+    $("#app-overlay").slideDown();
     $("#main-nav").fadeIn();
 });
