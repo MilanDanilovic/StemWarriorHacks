@@ -7,6 +7,6 @@ $("#air-show").click(function(e) {
 
 });
 $("#water-show").click(function(e) {
-    $("#api-menu").attr("href", "http://www.google.com/")
+    $("#api-menu").attr("href", "https://eonet.sci.gsfc.nasa.gov/")
 
 });
