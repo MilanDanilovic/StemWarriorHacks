@@ -35,16 +35,16 @@
         <div class="overlay"></div>
         <div class="container mt-5">
             <div class="card-group text-dark">
-                <div class="card m-1 hover-card-fire-change zoom rounded">
-                    <a href="#" class="text-decoration-none text-dark" id="fire-show">
+                <div class="card m-1 hover-card-fire-change zoom">
+                    <a href="#" class="text-decoration-none text-dark" id="donate-show">
                         <img src="assets/img/6.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h1 class="card-title">DONATE</h1>
                         </div>
                     </a>
                 </div>
-                <div class="card m-1 hover-card-air-change zoom rounded">
-                    <a href="#" class="text-decoration-none text-dark" id="air-show">
+                <div class="card m-1 hover-card-air-change zoom">
+                    <a href="#" class="text-decoration-none text-dark" id="partner-show">
                         <img src="assets/img/5.png" class="card-img-top" alt="...">
                         <div class="card-body" style="background-color: #9dedf3;">
                             <h1 class="card-title">PARTNER PROGRAM</h1>
@@ -55,17 +55,30 @@
         </div>
 
     </header>
-
     <section id="donate-section">
         <div class="container">
             <div class="row border rounded border-2 p-5 mb-5">
-                <form>
-                    <div class="form-group">
+                <form class="row">
+                    <navbar class="navbar-collapse">
+                        <div class="mb-5">
+                            <div class="row">
+                                <div class="col-sm-4 col-lg-5">
+                                    <a class="btn btn-dark" id="go-back-donation"><i class="fas fa-arrow-left"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </navbar>
+
+                    <div class="form-group mb-5">
+                        <h2>Thank you For Donating!</h2>
+                    </div>
+
+                    <div class="form-group col-lg-5">
                         <label for="exampleFormControlSelect1"><h4><code class="text-dark">Purpose</code></h4></label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                          <option>Clean Water </option>
+                        <select class="form-control fs-3x" id="donation-select">
+                          <option selected="">Plant a Tree</option>
                           <option>Clean Air</option>
-                          <option>Plant a Tree</option>
+                          <option>Clean Water</option>
                         </select>
                     </div>
                     <div class="form-group mt-3">
@@ -117,6 +130,15 @@
     <section id="partner-section">
         <div class="container mt-5">
             <div class="row">
+                <navbar class="navbar-collapse">
+                    <div class="mb-2">
+                        <div class="row">
+                            <div class="col-sm-4 col-lg-5">
+                                <a class="btn btn-dark" id="go-back-partner"><i class="fas fa-arrow-left"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </navbar>
                 <div class="col-lg-8">
                     <article>
                         <header class="mb-4">
@@ -125,7 +147,7 @@
                             <a class="badge bg-secondary text-decoration-none link-light" href="#!">Nature</a>
                             <a class="badge bg-secondary text-decoration-none link-light" href="#!">Awareness</a>
                         </header>
-                        <figure class="mb-4"><img class="img-fluid rounded" src="https://dummyimage.com/900x400/ced4da/6c757d.jpg" alt="..." /></figure>
+                        <figure class="mb-4"><img class="img-fluid rounded" src="assets/img/banner-1.png" alt="..." /></figure>
                         <section class="mb-5">
                             <p class="fs-5 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe.</p>
                             <p class="fs-5 mb-4">The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question,
@@ -146,6 +168,7 @@
                 </div>
             </div>
         </div>
+    </section>
     </section>
 
 
@@ -221,8 +244,7 @@
         firebase.analytics();
     </script>
 
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+    <script src="assets/js/monetization-script.js"></script>
 
 </body>
