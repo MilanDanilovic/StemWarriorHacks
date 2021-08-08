@@ -445,3 +445,12 @@ textarea.input2 + .focus-input2::after {
 #main-nav{
   position: sticky top;
 }
+
+#fire{
+  background-color: rgb(31, 158, 6);
+  
+  background: -webkit-linear-gradient(-135deg, #39f30b, #1a9915, #247405, #09994a);
+  background: -o-linear-gradient(-135deg, #247405, #1a9915, #09994a, #39f30b);
+  background: -moz-linear-gradient(-135deg, #1a9915, #39f30b, #09994a, #247405);
+  background: linear-gradient(-135deg, #09994a, #247405, #39f30b, #1a9915);
+}
