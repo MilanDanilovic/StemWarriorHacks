@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>lyfe.io - app</title>
+    <link rel="shortcut icon" type="image/png" href="assets/img/LOGO-LYFE-Alone.ico">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/app-layout-style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light navbar-expand bg-transparent navigation-clean sticky-top" id="main-nav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="assets/img/LOGO-LYFE-Font.png" class="width-logo"></img>
+            </a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"></button>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-light navbar-expand bg-dark navigation-clean sticky-top" id="minimized">
+        <div class="container">
+            <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"></button>
+            <div class="collapse navbar-collapse " id="navcol-1">
+                <a class="btn hover-button-change w-25 border border-rounded border-3" role="button" href="#" id="back-to-overlay"><i class="fas fa-angle-double-down" style="color: white;"></i></a>
+                <a class="btn hover-button-change w-25 border border-rounded border-3" role="button" href="index.html" id="back-to-overlay"><i class="fas fa-home" style="color: white;"></i></a>
+                <a class="btn hover-button-change w-25 border border-rounded border-3" role="button" href="monetization.html" target="_blank" id="back-to-overlay"><i class="fas fa-envelope" style="color: white;"></i></a>
+                <a class="btn hover-button-change w-25 border border-rounded border-3" role="button" href="#" id="api-menu" target="_blank" style="color: white;">API <i class="fas fa-globe" style="color: white;"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="text-center text-dark" id="app-overlay">
+        <div class="overlay"></div>
+        <div class="container mt-5">
+            <div class="col-xl-9 mx-auto position-relative ">
+                <h1 class="mb-5">Which data can we fetch for you?</h1>
+                <h1 class="mb-5 change"></h1>
+            </div>
+            <div class="card-group text-dark">
+                <div class="card m-1 hover-card-fire-change zoom rounded">
+                    <a href="#" class="text-decoration-none text-dark" id="fire-show">
+                        <img src="assets/img/card-1-bg.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Fire</h5>
+                            <p class="card-text">Latest information about forest fires around the world. Current locations and data. In drastic summer heats, forest fires can result in millions euros of disasters around the world.</p>
+                            <code class="text-dark">read more...</code>
+                        </div>
+                    </a>
+                </div>
+                <div class="card m-1 hover-card-air-change zoom rounded">
+                    <a href="#" class="text-decoration-none text-dark" id="air-show">
+                        <img src="assets/img/card-2-bg.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Air</h5>
+                            <p class="card-text">Browse air pollution data around the world or in your area. A new study suggests that pollution is also associated with increased risk of mortality for several types of cancer.</p>
+                            <code class="text-dark">read more...</code>
+                        </div>
+                    </a>
+                </div>
+                <div class="card m-1 hover-card-water-change zoom rounded">
+                    <a href="#" class="text-decoration-none text-dark" id="water-show">
+                        <img src="assets/img/card-3-bg.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Water</h5>
+                            <p class="card-text">Discover water data around the globe. According to the UN, every year, approximately 297,000 children under five die from diseases linked to poor sanitation, poor hygiene, or unsafe drinking water</p>
+                            <code class="text-dark">read more...</code>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- ##################### AMBER FIRES SECTION ########################### -->
+
+    <section id="fire">
+        <div id="wrapper2" class="wrapper">
+            <div class="d-flex flex-column align-items-center mt-5" id="">
+                <div id="content" style="width: 80%;">
+                    <div class="container-fluid">
+                        <div class="mb-2">
+                            <h1>Amber Fires</h1>
+                        </div>
+                        <div class="row" style="justify-content: center;">
+                            <div class="col-md-5  col-xl-6 mb-4">
+                                <div class="card shadow border-start-primary py-2">
+                                    <div class="card-body">
+                                        <div class="row align-items-center no-gutters">
+                                            <div class="col me-2">
+                                                <div class="text-uppercase text-primary fw-bold text-xs mb-1">
+                                                    <span>Source:</span></div>
+                                                <div class="text-dark fw-bold h5 mb-0"><span id="ns-input"><a href="https://eonet.sci.gsfc.nasa.gov" target="_blank">NASA</a></span></div>
+                                            </div>
+
+                                            <div class="col-auto"><i class="fas fa-signal fa-2x text-success"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5  col-xl-6 mb-4">
+                                <div class="card shadow border-start-warning py-2">
+                                    <div class="card-body">
+                                        <div class="row align-items-center no-gutters">
+                                            <div class="col me-2">
+                                                <div class="text-uppercase text-primary fw-bold text-xs mb-1">
+                                                    <span>Wildfires in last 24h in your area:</span></div>
+                                                <div class="text-dark fw-bold h5 mb-0"><span id="di-input"></span></div>
+                                            </div>
+                                            <div class="col-auto"><i class="fas fa-fire fa-2x text-danger"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-7 col-xl-8" style="width: 100%;">
+                                <div class="card shadow mb-4">
+                                    <div class="card-header d-flex justify-content-between align-items-center">
+                                        <h6 class="text-primary fw-bold m-0">Fire Names</h6>
+                                        <div class="dropdown no-arrow"><button class="btn btn-link btn-sm dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button"><i
+                                                    class="fas fa-ellipsis-v text-gray-400"></i></button>
+                                            <div class="dropdown-menu shadow dropdown-menu-end animated--fade-in">
+                                                <p class="text-center dropdown-header">dropdown header:</p><a class="dropdown-item" href="#">&nbsp;Action</a><a class="dropdown-item" href="#">&nbsp;Another action</a>
+                                                <div class="dropdown-divider"></div><a class="dropdown-item" href="#">&nbsp;Something else here</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="card-body col-sm" id="latestForrestFires">
+                                        <div class="chart-area"><canvas data-bss-chart="{&quot;type&quot;:&quot;line&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;Jan&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;May&quot;,&quot;Jun&quot;,&quot;Jul&quot;,&quot;Aug&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;Earnings&quot;,&quot;fill&quot;:true,&quot;data&quot;:[&quot;0&quot;,&quot;10000&quot;,&quot;5000&quot;,&quot;15000&quot;,&quot;10000&quot;,&quot;20000&quot;,&quot;15000&quot;,&quot;25000&quot;],&quot;backgroundColor&quot;:&quot;rgba(78, 115, 223, 0.05)&quot;,&quot;borderColor&quot;:&quot;rgba(78, 115, 223, 1)&quot;}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:false,&quot;labels&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;}},&quot;title&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;},&quot;scales&quot;:{&quot;xAxes&quot;:[{&quot;gridLines&quot;:{&quot;color&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;zeroLineColor&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;drawBorder&quot;:false,&quot;drawTicks&quot;:false,&quot;borderDash&quot;:[&quot;2&quot;],&quot;zeroLineBorderDash&quot;:[&quot;2&quot;],&quot;drawOnChartArea&quot;:false},&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#858796&quot;,&quot;padding&quot;:20}}],&quot;yAxes&quot;:[{&quot;gridLines&quot;:{&quot;color&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;zeroLineColor&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;drawBorder&quot;:false,&quot;drawTicks&quot;:false,&quot;borderDash&quot;:[&quot;2&quot;],&quot;zeroLineBorderDash&quot;:[&quot;2&quot;]},&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#858796&quot;,&quot;padding&quot;:20}}]}}}"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row ml-auto">
+                            <div class="mb-4 " id="maps-1">
+                                <iframe allowfullscreen frameborder="0" src="https://www.google.com/maps/embed/v1/view?key=AIzaSyCRRvqrK4Kn79NkGUy6ljnEHzJfs-JUcRk&amp;center=-33.8569%2C151.2152&amp;zoom=11" loading="lazy" width="100%" height="400"></iframe>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ##################### AIR POLLUTION SECTION ########################### -->
+
+    <section id="air">
+
+        <div id="wrapper2" class="wrapper">
+            <div class="d-flex flex-column align-items-center mt-5" id="">
+                <div id="content" style="width: 80%;">
+                    <div class="container-fluid">
+                        <div class="mb-2">
+                            <h1>Air Pollution</h1>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-xl-4 mb-4">
+                                <div class="card shadow border-start-primary py-2">
+                                    <div class="card-body">
+                                        <div class="row align-items-center no-gutters">
+                                            <div class="col me-2">
+                                                <div class="text-uppercase text-primary fw-bold text-xs mb-1">
+                                                    <span>Air Quality Index:</span></div>
+                                                <div class="text-dark fw-bold h5 mb-0"><span id="aqi-input"></span></div>
+                                            </div>
+                                            <div class="col-auto"><i class="fa-2x text-gray-300" id="aqi-icon"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4 mb-4">
+                                <div class="card shadow border-start-success py-2">
+                                    <div class="card-body">
+                                        <div class="row align-items-center no-gutters">
+                                            <div class="col me-2">
+                                                <div class="text-uppercase text-dark fw-bold text-xs mb-1">
+                                                    <span>Level of Concern:</span></div>
+                                                <div class="text-dark fw-bold h5 mb-0"><span id="aqi-info"></span></div>
+                                            </div>
+                                            <div class="col-auto"><i class="fas fa-warning fa-2x text-gray-300"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4 mb-4">
+                                <div class="card shadow border-start-warning py-2">
+                                    <div class="card-body">
+                                        <div class="row align-items-center no-gutters">
+                                            <div class="col me-2">
+                                                <div class="text-uppercase text-dark fw-bold text-xs mb-1">
+                                                    <span>Avg temperature:</span></div>
+                                                <div class="text-dark fw-bold h5 mb-0"><span id="aqi-more"></span></div>
+                                            </div>
+                                            <div class="col-auto"><i class="fas fa-info fa-2x text-gray-300"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-7 col-xl-8" style="width: 100%;">
+                                <div class="card shadow mb-4">
+                                    <div class="card-header d-flex justify-content-between align-items-center">
+                                        <h6 class="text-primary fw-bold m-0">Source</h6>
+                                        <div class="dropdown no-arrow"><button class="btn btn-link btn-sm dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button"><i
+                                                    class="fas fa-ellipsis-v text-gray-400"></i></button>
+                                            <div class="dropdown-menu shadow dropdown-menu-end animated--fade-in">
+                                                <p class="text-center dropdown-header">dropdown header:</p><a class="dropdown-item" href="#">&nbsp;Action</a><a class="dropdown-item" href="#">&nbsp;Another action</a>
+                                                <div class="dropdown-divider"></div><a class="dropdown-item" href="#">&nbsp;Something else here</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body col-sm" id="waterSources">
+                                        <div class="chart-area"><canvas data-bss-chart="{&quot;type&quot;:&quot;line&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;Jan&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;May&quot;,&quot;Jun&quot;,&quot;Jul&quot;,&quot;Aug&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;Earnings&quot;,&quot;fill&quot;:true,&quot;data&quot;:[&quot;0&quot;,&quot;10000&quot;,&quot;5000&quot;,&quot;15000&quot;,&quot;10000&quot;,&quot;20000&quot;,&quot;15000&quot;,&quot;25000&quot;],&quot;backgroundColor&quot;:&quot;rgba(78, 115, 223, 0.05)&quot;,&quot;borderColor&quot;:&quot;rgba(78, 115, 223, 1)&quot;}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:false,&quot;labels&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;}},&quot;title&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;},&quot;scales&quot;:{&quot;xAxes&quot;:[{&quot;gridLines&quot;:{&quot;color&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;zeroLineColor&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;drawBorder&quot;:false,&quot;drawTicks&quot;:false,&quot;borderDash&quot;:[&quot;2&quot;],&quot;zeroLineBorderDash&quot;:[&quot;2&quot;],&quot;drawOnChartArea&quot;:false},&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#858796&quot;,&quot;padding&quot;:20}}],&quot;yAxes&quot;:[{&quot;gridLines&quot;:{&quot;color&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;zeroLineColor&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;drawBorder&quot;:false,&quot;drawTicks&quot;:false,&quot;borderDash&quot;:[&quot;2&quot;],&quot;zeroLineBorderDash&quot;:[&quot;2&quot;]},&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#858796&quot;,&quot;padding&quot;:20}}]}}}"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ml-auto">
+                            <div class="mb-4" id="maps-2">
+                                <iframe allowfullscreen frameborder="0" src="https://www.google.com/maps/embed/v1/view?key=AIzaSyCRRvqrK4Kn79NkGUy6ljnEHzJfs-JUcRk&amp;center=-33.8569%2C151.2152&amp;zoom=11" loading="lazy" width="100%" height="400"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ##################### WATER POLLUTION SECTION ########################### -->
+
+    <section id="water">
+        <div id="wrapper2" class="wrapper">
+            <div class="d-flex flex-column align-items-center mt-5" id="">
+                <div id="content" class="w-100">
+                    <div class="container-fluid">
+                        <div class="mb-2">
+                            <h1>Water Data</h1>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col mb-4">
+                                <div class="card shadow border-start-primary py-2">
+                                    <div class="card-body">
+                                        <div class="row align-items-center no-gutters">
+                                            <div class="col me-2">
+                                                <div class="text-uppercase text-primary fw-bold text-xs mb-1">
+                                                    <span>Most Recent Thunderstorm:</span></div>
+                                                <span id="most-recent"></span>
+                                                <div class="text-dark fw-bold h5 mb-0"><span id="ns-input"></span></div>
+                                            </div>
+                                            <div class="col-auto"><i class="fas fa-cloud-showers-heavy fa-2x text-primary"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row ml-auto">
+                                    <div class="mb-4" id="maps-3">
+                                        <iframe allowfullscreen frameborder="0" src="https://www.google.com/maps/embed/v1/view?key=AIzaSyCRRvqrK4Kn79NkGUy6ljnEHzJfs-JUcRk&amp;center=-33.8569%2C151.2152&amp;zoom=11" loading="lazy" width="100%" height="400"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-7 col-xl-8 m-2 w-100">
+                            <div class="card shadow mb-4 ">
+                                <div class="card-header d-flex justify-content-between align-items-center">
+                                    <h5 class="text-danger fw-bold m-0">Most Recent Thunderstorms <i class="fas fa-bolt"></i></h5>
+                                    <div class="dropdown no-arrow"><button class="btn btn-link btn-sm dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button"><i
+                                                    class="fas fa-ellipsis-v text-gray-400"></i></button>
+                                        <div class="dropdown-menu shadow dropdown-menu-end animated--fade-in">
+                                            <p class="text-center dropdown-header">dropdown header:</p><a class="dropdown-item" href="#">&nbsp;Action</a><a class="dropdown-item" href="#">&nbsp;Another action</a>
+                                            <div class="dropdown-divider"></div><a class="dropdown-item" href="#">&nbsp;Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <table class="table">
+                                        <thead>
+                                            <tr class="text-center">
+                                                <th scope="col">Title</th>
+                                                <th scope="col">Happened</th>
+                                                <th scope="col">Download Data</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="recentThunderstorms">
+                                            <tr class="text-center ">
+                                                <td></td>
+                                                <td></td>
+                                                <td><a href="#" class="link-dark"><i class="fas fa-download"></i></a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-7 col-xl-8 m-2 w-100">
+                            <div class="card shadow mb-4 ">
+                                <div class="card-header d-flex justify-content-between align-items-center">
+                                    <h5 class="text-primary fw-bold m-0">Recently Formed Glaciers <i class="fas fa-snowflake"></i></h5>
+                                    <div class="dropdown no-arrow"><button class="btn btn-link btn-sm dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button"><i
+                                                    class="fas fa-ellipsis-v text-gray-400"></i></button>
+                                        <div class="dropdown-menu shadow dropdown-menu-end animated--fade-in">
+                                            <p class="text-center dropdown-header">dropdown header:</p><a class="dropdown-item" href="#">&nbsp;Action</a><a class="dropdown-item" href="#">&nbsp;Another action</a>
+                                            <div class="dropdown-divider"></div><a class="dropdown-item" href="#">&nbsp;Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <table class="table">
+                                        <thead>
+                                            <tr class="text-center">
+                                                <th scope="col">Title</th>
+                                                <th scope="col">Date formed</th>
+                                                <th scope="col">Download Data</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="glaciersIce">
+                                            <tr class="text-center">
+                                                <td></td>
+                                                <td></td>
+                                                <td><a href="#" class="link-dark"><i class="fas fa-download"></i></a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/script-show-section-app.js"></script>
+    <script src="assets/js/geo-find-air.js"></script>
+    <script src="assets/js/api-menu.js"></script>
+    <script src="assets/js/thunder-ice.js"></script>
+
+</body>

@@ -1,0 +1,227 @@
+body {
+    height: 100vh!important;
+}
+
+.width-class {
+    width: 120px;
+}
+
+.width-logo {
+    width: 100px
+}
+
+.hover-button-change {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.hover-card-water-change {
+    background-color: #5b9cff;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.hover-card-water-change:hover {
+    opacity: 1
+}
+
+.hover-card-air-change {
+    background-color: #a8fff8;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.hover-card-air-change:hover {
+    opacity: 1
+}
+
+.hover-card-fire-change {
+    background-color: #ffde73;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.hover-card-fire-change:hover {
+    opacity: 1
+}
+
+.hover-button-change:hover {
+    opacity: 1
+}
+
+.svg-wrapper {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    width: 320px;
+}
+
+.shape {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+    fill: transparent;
+    stroke: #2cf619;
+    border-bottom: 5px solid black;
+    transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+
+.text {
+    font-family: 'Lato';
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 8px;
+    color: #fff;
+    top: -48px;
+    position: relative;
+}
+
+.svg-wrapper:hover .shape {
+    stroke-width: 2px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 760;
+}
+
+.change:before {
+    content: 'Water';
+    font-size: 5rem;
+    animation-name: change-letter;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+.zoom:hover {
+    transform: scale(1.2);
+    z-index: 100;
+}
+
+@keyframes change-letter {
+    5% {
+        opacity: 1;
+        content: "Water"
+    }
+    10% {
+        opacity: 0.5;
+        content: "Water"
+    }
+    15% {
+        opacity: 0.2;
+        content: "Water"
+    }
+    20% {
+        opacity: 0;
+        content: "Water"
+    }
+    25% {
+        opacity: 0;
+        content: "Air"
+    }
+    30% {
+        opacity: 0.2;
+        content: "Air"
+    }
+    35% {
+        opacity: 0.5;
+        content: "Air"
+    }
+    40% {
+        opacity: 1;
+        content: "Air"
+    }
+    45% {
+        opacity: 0.5;
+        content: "Air"
+    }
+    50% {
+        opacity: 0.2;
+        content: "Air"
+    }
+    55% {
+        opacity: 0;
+        content: "Air"
+    }
+    60% {
+        opacity: 0;
+        content: "Fire"
+    }
+    65% {
+        opacity: 0.2;
+        content: "Fire"
+    }
+    70% {
+        opacity: 0.5;
+        content: "Fire"
+    }
+    75% {
+        opacity: 1;
+        content: "Fire";
+    }
+    80% {
+        opacity: 0.5;
+        content: "Fire";
+    }
+    85% {
+        opacity: 0.2;
+        content: "Fire";
+    }
+    90% {
+        opacity: 0;
+        content: "Fire";
+    }
+    95% {
+        opacity: 0;
+        content: "Water";
+    }
+    100% {
+        opacity: 0.2;
+        content: "Water";
+    }
+    0% {
+        opacity: 0.5;
+        content: "Water";
+    }
+}
+
+.hover-card-water-change {
+    background-color: #5b9cff;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.hover-card-water-change:hover {
+    opacity: 1
+}
+
+.hover-card-air-change {
+    background-color: #a8fff8;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.hover-card-air-change:hover {
+    opacity: 1
+}
+
+.hover-card-fire-change {
+    background-color: #ffde73;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.hover-card-fire-change:hover {
+    opacity: 1
+}
+
+.hover-button-change:hover {
+    opacity: 1
+}
+
+.text-hazard {
+    color: rgb(136, 12, 136);
+}

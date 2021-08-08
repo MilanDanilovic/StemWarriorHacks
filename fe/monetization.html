@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>lyfe.io - newsletter</title>
+    <link rel="shortcut icon" type="image/png" href="assets/img/LOGO-LYFE-Alone.ico">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/app-layout-style.css">
+    <link rel="stylesheet" href="assets/css/radio-label-styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light navbar-expand bg-light navigation-clean sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="assets/img/LOGO-LYFE-Font.png" class="width-logo"></img>
+            </a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <a class="btn ms-auto hover-button-change" role="button" href="#" id="signin">Sign In&nbsp;&nbsp;<i
+                        class="fas fa-sign-in-alt"></i></a>
+            </div>
+        </div>
+    </nav>
+
+
+    <header class="text-center text-dark" id="app-overlay">
+        <div class="overlay"></div>
+        <div class="container mt-5">
+            <div class="card-group text-dark">
+                <div class="card m-1 hover-card-fire-change zoom">
+                    <a href="#" class="text-decoration-none text-dark" id="donate-show">
+                        <img src="assets/img/6.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h1 class="card-title">DONATE</h1>
+                        </div>
+                    </a>
+                </div>
+                <div class="card m-1 hover-card-air-change zoom">
+                    <a href="#" class="text-decoration-none text-dark" id="partner-show">
+                        <img src="assets/img/5.png" class="card-img-top" alt="...">
+                        <div class="card-body" style="background-color: #9dedf3;">
+                            <h1 class="card-title">PARTNER PROGRAM</h1>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <section id="donate-section">
+        <div class="container mt-5">
+            <div class="row border rounded border-2 p-5 mb-5">
+                <form class="row">
+                    <navbar class="navbar-collapse">
+                        <div class="mb-5">
+                            <div class="row">
+                                <div class="col-sm-4 col-lg-5">
+                                    <a class="btn btn-dark" id="go-back-donation"><i class="fas fa-arrow-left"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </navbar>
+
+                    <div class="form-group mb-5">
+                        <h2>Thank you For Donating!</h2>
+                    </div>
+
+                    <div class="form-group col-lg-5">
+                        <label for="exampleFormControlSelect1">
+                            <h4><code class="text-dark">Purpose</code></h4>
+                        </label>
+                        <select class="form-control fs-3x" id="donation-select">
+                            <option selected="">Plant a Tree</option>
+                            <option>Clean Air</option>
+                            <option>Clean Water</option>
+                        </select>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="exampleFormControlTextarea1">
+                            <h4><code class="text-dark">Message</code></h4>
+                        </label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <fieldset class="form-group mt-3 mb-3">
+                        <div class="row justify-content-center">
+                            <label class="rad-label col-lg-2 col-sm-5">
+                                <input type="radio" class="rad-input" name="rad2">
+                                <div class="rad-design"></div>
+                                <div class="rad-text vrces">€5</div>
+                            </label>
+
+                            <label class="rad-label col-lg-2 col-sm-5">
+                                <input type="radio" class="rad-input" name="rad2">
+                                <div class="rad-design"></div>
+                                <div class="rad-text ces">€10</div>
+                            </label>
+
+                            <label class="rad-label col-lg-2 col-sm-5">
+                                <input type="radio" class="rad-input" name="rad2">
+                                <div class="rad-design"></div>
+                                <div class="rad-text ret">€25</div>
+                            </label>
+
+                            <label class="rad-label col-lg-2 col-sm-5">
+                                <input type="radio" class="rad-input" name="rad2">
+                                <div class="rad-design"></div>
+                                <div class="rad-text vrret">€50</div>
+                            </label>
+                            <label class="rad-label col-lg-2 col-sm-5">
+                                <input type="radio" class="rad-input" name="rad2">
+                                <div class="rad-design"></div>
+                                <div class="rad-text vrret">€100</div>
+                            </label>
+                        </div>
+                    </fieldset>
+                    <div class="form-group row justify-content-center">
+                        <div class="col-sm-5 col-lg-2 ">
+                            <button type="submit" class="btn btn-primary w-100">Donate</button>
+                        </div>
+                    </div>
+
+                    <div class="container col-md-5 mt-5">
+                        <p class="fs-2x"><code class="text-dark"><span class="text-danger">*</span>By donating you are eligible for our donor <strong>newsletter</strong>! Get everyday updates on air quality in your area, water data around the globe and amber alerts for wildfires near you</code></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="partner-section">
+        <div class="container mt-5">
+            <div class="row">
+                <navbar class="navbar-collapse">
+                    <div class="mb-2">
+                        <div class="row">
+                            <div class="col-sm-4 col-lg-5">
+                                <a class="btn btn-dark" id="go-back-partner"><i class="fas fa-arrow-left"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </navbar>
+                <div class="col-lg-8">
+                    <article>
+                        <header class="mb-4">
+                            <h1 class="fw-bolder mb-1">Welcome to our Partner Program!</h1>
+                            <div class="text-muted fst-italic mb-2">lyfe.io partner affiliate</div>
+                            <a class="badge bg-secondary text-decoration-none link-light" href="#!">Nature</a>
+                            <a class="badge bg-secondary text-decoration-none link-light" href="#!">Awareness</a>
+                            <a class="badge bg-secondary text-decoration-none link-light" href="#!">#lyfe.io</a>
+                        </header>
+                        <figure class="mb-4"><img class="img-fluid rounded" src="assets/img/banner-1.png" alt="..." />
+                        </figure>
+                        <section class="mb-5">
+
+                            <h4 class="mb-4">Want to help but are unable to donate money?</h5>
+                                <p class="fs-5 mb-4">Our partnership program allows you to help our community through social activities by spreading awareness of the state of our nature.</p>
+                                <h4 class="mb-4">How can you apply for a partnership program?</h5>
+                                    <p class="fs-5 mb-4">Through social networks, by spreading awareness through posts / stories with the tag #lyfe.io you apply for our program. On a monthly basis, we announce the winner when they expect valuable prizes.</p>
+                                    <h4 class="mb-4">Application conditions?</h5>
+
+                                        <p class="fs-5 mb-4">- Post with tag #lyfe.io and also tag as <br> - Unlocked profile (instagram)</p>
+                                        <h4 class="mb-4">How and when we choose winner ?</h5>
+                                            <p class="fs-5 mb-4"> We score each post according to the following criteria: <br> - Instagram story 1p <br> - Instagram post 2p <br> - Twitter post 2p <br> At the end of each month, the 10 members with the largest number are awarded.
+                                                <br> They are notified via email and our discord server.
+                                            </p>
+                                            <h4 class="mb-4">What are the rewards?</h5>
+                                                <p class="fs-5 mb-4">Premium package on our website. Role and badge on our discord server with various additional functions for discord bots.
+                                                </p>
+                        </section>
+                    </article>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-4">
+                        <div class="card-header" style="text-align: center;">Socials</div>
+                        <div class="col-lg-6 text-center my-auto h-100" style="width: 100%;">
+                            <p>You can find us here</p>
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item ml-auto"><a class="link-dark" href="https://discord.gg/BjzTGZ2uBJ" target="_blank"><i
+                                            class="fab fa-discord fa-2x fa-fw"></i></a></li>
+                                <li class="list-inline-item ml-auto"><a class="link-dark" href="https://twitter.com/io_lyfe" target="_blank"><i
+                                            class="fa fa-twitter fa-2x fa-fw"></i> </a></li>
+                                <li class="list-inline-item ml-auto"><a class="link-dark" href="https://www.instagram.com/lyfe.io.dom/" target="_blank"><i
+                                            class="fa fa-instagram fa-2x fa-fw"></i></a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </section>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyDm0wf5hxfGZg7Yz4oi-_lHif_t5IOdfV4",
+            authDomain: "lyfe-27a22.firebaseapp.com",
+            projectId: "lyfe-27a22",
+            storageBucket: "lyfe-27a22.appspot.com",
+            messagingSenderId: "395499371186",
+            appId: "1:395499371186:web:58b632b782f061915567ab",
+            measurementId: "G-0JHMMLSBEN"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        document.getElementById('signin').addEventListener('click', GoogleLogin);
+
+
+        let provider = new firebase.auth.GoogleAuthProvider()
+
+        function GoogleLogin() {
+            console.log('Lgn test');
+            firebase.auth().signInWithPopup(provider).then((result) => {
+                console.log(result.user);
+                showUserData(result.user);
+            }).catch((err) => {
+                console.log(err);
+            });
+        }
+
+        function GoogleLogOut() {
+            firebase.auth().signOut().then(() => {
+                document.getElementById('navcol-1').innerHTML = ` <a class="btn ms-auto hover-button-change" role="button" href="#" id="signin">Sign In&nbsp;&nbsp;<i
+                        class="fas fa-sign-in-alt"></i></a>`
+                document.getElementById('signin').addEventListener('click', GoogleLogin);
+            }).catch((e) => {
+                console.log(e);
+            })
+        }
+
+        function showUserData(user) {
+            document.getElementById('navcol-1').innerHTML = `
+    <a class="btn ms-auto hover-button-change" role="button" href="#" id="signout">  <img src="${user.photoURL}" style="width:15%;  border-radius:50%; margin-right:5px"> <span style="padding-top:10px"> ${user.displayName}</span>&nbsp;&nbsp;<i
+                        class="fas fa-sign-out-alt"></i></a>
+    `
+            document.getElementById('signout').addEventListener('click', GoogleLogOut);
+        }
+
+        function checkAuthState() {
+            firebase.auth().onAuthStateChanged(user => {
+                if (user) {
+                    showUserData(user)
+                } else {
+
+                }
+            })
+        }
+
+        checkAuthState();
+
+        firebase.analytics();
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/monetization-script.js"></script>
+
+</body>
