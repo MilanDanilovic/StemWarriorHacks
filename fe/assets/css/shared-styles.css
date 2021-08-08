@@ -10,3 +10,17 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.hover-button-change {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.hover-button-change:hover {
+    opacity: 1
+}

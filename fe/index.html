@@ -77,8 +77,6 @@
                 </div>
             </div>
         </div>
-
-
     </section>
 
     <section class="text-center text-white" style="background:url(assets/img/bg-small.png) no-repeat center center;background-size:cover;">
@@ -100,37 +98,31 @@
         </div>
     </section>
 
-
     <footer class="bg-light footer">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 text-center text-lg-start my-auto h-100">
                     <ul class="list-inline mb-2">
-                        <li class="list-inline-item"><a class="link-dark" href="#">About</a></li>
-                        <li class="list-inline-item"><span>⋅</span></li>
                         <li class="list-inline-item"><a class="link-dark" href="contact.html">Contact</a></li>
-                        <li class="list-inline-item"><span>⋅</span></li>
-                        <li class="list-inline-item"><a class="link-dark" href="#">Terms of &nbsp;Use</a></li>
-                        <li class="list-inline-item"><span>⋅</span></li>
-                        <li class="list-inline-item"><a class="link-dark" href="#">Privacy Policy</a></li>
                     </ul>
-                    <p class="text-muted small mb-4 mb-lg-0">© Brand 2021. All Rights Reserved.</p>
+                    <p class="text-muted small mb-4 mb-lg-0">© Moesia 2021. All Rights Reserved.</p>
                 </div>
                 <div class="col-lg-6 text-center text-lg-end my-auto h-100">
                     <ul class="list-inline mb-0">
                         <li class="list-inline-item"><a class="link-dark" href="#"><i
-                            class="fab fa-discord fa-2x fa-fw"></i></a></li>
-                        <li class="list-inline-item"><a class="link-dark" href="https://twitter.com/io_lyfe" target="_blank"><i
-                            class="fa fa-twitter fa-2x fa-fw" ></i> </a></li>
-                        <li class="list-inline-item"><a class="link-dark" href="https://www.instagram.com/lyfe.io.dom/" target="_blank"><i
-                            class="fa fa-instagram fa-2x fa-fw"></i></a></li>
+                                    class="fab fa-discord fa-2x fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a class="link-dark" href="https://twitter.com/io_lyfe" target="_blank"><i class="fa fa-twitter fa-2x fa-fw"></i> </a></li>
+                        <li class="list-inline-item"><a class="link-dark" href="https://www.instagram.com/lyfe.io.dom/" target="_blank"><i class="fa fa-instagram fa-2x fa-fw"></i></a></li>
                         <li class="list-inline-item"><a class="link-dark" href="#"><i
-                                class="fa fa-arrow-up fa-2x fa-fw"></i></a></li>
+                                    class="fa fa-arrow-up fa-2x fa-fw"></i></a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
+
+
+
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
 
@@ -176,10 +168,10 @@
 
         function GoogleLogOut() {
             firebase.auth().signOut().then(() => {
+                $('.toast').toast('show');
                 document.getElementById('navcol-1').innerHTML = ` <a class="btn ms-auto hover-button-change" role="button" href="#" id="signin">Sign In&nbsp;&nbsp;<i
                         class="fas fa-sign-in-alt"></i></a>`
                 document.getElementById('signin').addEventListener('click', GoogleLogin);
-                alert("kurwa")
             }).catch((e) => {
                 console.log(e);
             })
@@ -208,9 +200,9 @@
         firebase.analytics();
     </script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js'></script>
-    <script src="script_head.js.js"></script>
 
 </body>
 
