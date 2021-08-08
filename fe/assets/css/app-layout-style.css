@@ -188,16 +188,6 @@ body {
     }
 }
 
-.hover-button-change {
-    background-color: transparent;
-    border: none;
-    text-align: center;
-    font-size: 16px;
-    margin: 4px 2px;
-    opacity: 0.6;
-    transition: 0.3s;
-}
-
 .hover-card-water-change {
     background-color: #5b9cff;
     opacity: 0.7;
@@ -230,4 +220,8 @@ body {
 
 .hover-button-change:hover {
     opacity: 1
+}
+
+.text-hazard {
+    color: rgb(136, 12, 136);
 }
